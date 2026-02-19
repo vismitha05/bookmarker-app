@@ -4,9 +4,6 @@ import { useAuth } from '@/context/AuthContext';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { Header } from '@/components/Layout/header';
-import { BookmarkForm } from '@/components/bookmarks/BookmarkForm';
-import { BookmarkList } from '@/components/bookmarks/BookmarkList';
-import { useBookmarks } from '@/hooks/useBookmarks';
 import { Loader } from 'lucide-react';
 
 export default function DashboardLayout({
