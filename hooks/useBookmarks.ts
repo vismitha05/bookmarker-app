@@ -109,7 +109,7 @@ export const useBookmarks = (userId: string | undefined) => {
             );
           } else if (payload.eventType === 'UPDATE') {
             setBookmarks((prev) =>
-              prev.map((b) => (b.id === payload.new.id ? payload.new : b))
+              prev.map((b) => (b.id === payload.new.id ? (payload.new as Bookmark) : b))
             );
           }
         }
